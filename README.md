@@ -1,7 +1,7 @@
 # queryToJson
 
 Java class to create JSON from database query.
-You create and execute a SQL query without need write POJO.
+You create and execute a SQL query without need to write POJO.
 
 Example JDBC:
 
@@ -40,7 +40,8 @@ produce output
 
 
 
-To rename output variables use  keyword AS in query string: "product_name as productName"
+To rename output variables use  keyword AS in query string: "product_name as productName".
+
 To prevent translation to uppercase close labels in quotation marks: "sale_date as \"saleDate\",    "
 
 
@@ -54,6 +55,8 @@ You can use it wit Hibernate:
 	String resultJson = Query2Json.listToJson(rows);
 	
 	System.out.println("result: "+resultJson);
+
+
 
 
 
