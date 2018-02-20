@@ -40,12 +40,12 @@ produce output
 
 
 
-To rename output variables use  keyword AS in query string: "product_name as productName".
+To rename output variables use keyword AS in query string: "product_name as productName".
 
-To prevent translation to uppercase close labels in quotation marks: "sale_date as \"saleDate\",    "
+To prevent translation to uppercase close labels in quotation marks: "sale_date as \"saleDate\", ...   "
 
 
-You can use it wit Hibernate:
+You can use it with Hibernate:
 
 
 	SQLQuery query = session.createSQLQuery(selectSQL);
